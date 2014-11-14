@@ -31,7 +31,6 @@ require('web-component-tester').gulp.init(gulp);
 var isRelease = process.env.RELEASE !== undefined;
 
 var banner = fs.readFileSync('banner.txt', 'utf8');
-banner += '//version <%= pkg.version %>\n';
 
 var pkg;
 
